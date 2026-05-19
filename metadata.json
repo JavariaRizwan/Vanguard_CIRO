@@ -1,0 +1,6 @@
+{
+  "name": "CIRO Pakistan",
+  "description": "Multi-page citizen mobile app prototype for localized flood reporting, rescue requests, and real-time GIS-based emergency management in Faisalabad, Pakistan.",
+  "requestFramePermissions": ["geolocation", "microphone", "camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

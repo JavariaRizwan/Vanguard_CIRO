@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-sky-blue: #F0F9FF;
+  --color-teal-muted: #50A0A0;
+  --color-jade-muted: #70C080;
+  --color-navy-muted: #4070A0;
+  --color-teal-green: #0f766e;
+  --color-alert-orange: #f97316;
+  --color-slate-surface: #F0F4F8;
+  --color-risk-orange: #FF8C00;
+  
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+body {
+  @apply bg-slate-surface font-sans antialiased text-slate-800;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Leaflet map styles */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.urdu-text {
+  direction: rtl;
+  font-family: serif;
+}
