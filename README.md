@@ -1,5 +1,5 @@
 <div align="center">
-  <img width="1200" height="400" alt="CIRO Pakistan Banner" src="./google_antigravity_banner.jpg" />
+  <img width="600" height="400" alt="CIRO Pakistan Banner" src="https://cyberscoop.com/wp-content/uploads/sites/3/2026/04/google-antigravity.jpeg" />
   
   # 🛡️ CIRO Pakistan
   ### **Crisis Incident Reporting & Orchestration Platform**
