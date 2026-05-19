@@ -43,35 +43,37 @@ By integrating **Google Gemini 3 AI Core Reasoning**, interactive **GIS Spatial 
 
 CIRO implements a highly responsive, modern client-server architecture built on **TypeScript (Vite + Express)**, guaranteeing robust typings and fast local executions.
 
+---
+
 ```mermaid
 graph TD
     %% Frontend Subsystem
-    subgraph Frontend [Client-Side UI | React 19 + Vite]
+    subgraph Frontend ["Client-Side UI | React 19 + Vite"]
         A[Mobile Citizen App]
         B[Admin Command Theater]
         C[Leaflet & React-Leaflet Interactive Maps]
     end
 
     %% Real-Time Bridge
-    subgraph Communication [Network Layer]
+    subgraph Communication ["Network Layer"]
         D[HTTP REST Endpoints]
         E[WebSocket Server /api-ws]
     end
 
     %% Backend Subsystem
-    subgraph Backend [Backend Orchestration | Express.js + TSX]
+    subgraph Backend ["Backend Orchestration | Express.js + TSX"]
         F[Express Controller Rules]
         G[Google Gemini AI Engine @google/genai]
         H[Multi-Agent Pipeline Vanguard Core]
     end
 
     %% Storage
-    subgraph Storage [Persistent Storage]
+    subgraph Storage ["Persistent Storage"]
         I[MySQL Database / Cloud SQL]
     end
 
     %% External APIs
-    subgraph ExternalServices [Third-Party API Network]
+    subgraph ExternalServices ["Third-Party API Network"]
         J[TomTom Maps API]
         K[OpenWeather API]
         L[Scrapebadger Twitter API]
@@ -84,9 +86,9 @@ graph TD
     A & B -->|Real-Time Telemetry| E
     D --> F
     E --> F
+    F -->|Read/Write Operations| I
     F --> G
     F --> H
-    F -->|Read/Write Operations| I
     G & H --> J & K & L & M
 ```
 
